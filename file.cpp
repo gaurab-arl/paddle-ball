@@ -1,27 +1,42 @@
 #include "game.h"
+#include <fstream>
+#include <iostream>
+#include <string>
+using namespace std;
+
 // Dummy file for linking purposes
-/* TO OPEN THE FILE
-using the constructure
-using the member function open() of the class
-*/
+// TO OPEN THE FILE:
+// - Using the constructor
+// - Using the member function open() of the class
 
 void save_info()
 {
-	char str[50] = "SCORE : ";
- ofstream out("score.txt");   // write stream 
- out<<str<<user.score;
+   ofstream out("C:\\Users\\user\\Videos\\paddel-ball\\score.txt");
+
+    if (!out) {
+        cout << "Unable to open file for writing.\n";
+        return;
+    }
+    out << "SCORE : " << user.score;
+    out.close();
 }
 
 void view_info()
 {
-	int yinc = 50;
-	string str2;
-	ifstream in("score.txt");
-	getline(in , str2);
-	cout <<str2;
-	
-	while(!eof(int))
-	{
-		outtextxy(100 , 50 + yinc, str2);
-	}
+    ifstream in("C:\\Users\\user\\Videos\\paddel-ball\\score.txt");
+    if (!in) {
+        cout << "Unable to open file for reading.\n";
+        return;
+    }
+
+    string line;
+    int y = 100;
+
+    while (getline(in, line)) {
+        cout << line << endl; // Console
+        outtextxy(100, y, const_cast<char*>(line.c_str())); // Graphics
+        y += 20;
+    }
+
+    in.close();
 }

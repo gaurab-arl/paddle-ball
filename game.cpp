@@ -8,7 +8,7 @@ void game_start()
 
     cleardevice();
 
-    while (true)
+    while (true) 
     {
         setactivepage(page);
         setvisualpage(1 - page);
@@ -48,7 +48,6 @@ void game_start()
         page = 1 - page;
         ball_status = false;
     }
-    user.score = scoreText;
     save_info();
 }
 
