@@ -4,6 +4,7 @@
 #include "graphics.h"
 #include <iostream>
 #include <windows.h>
+#include <fstream>
 using namespace std;
 
 #define MAX_WIDTH 700
@@ -46,5 +47,9 @@ void draw_paddel(int x);
 
 // Collision
 void check_collision(int &ball_x, int &ball_y, int paddle_x);
+
+// File 
+void save_info();
+void view_info();
 
 #endif

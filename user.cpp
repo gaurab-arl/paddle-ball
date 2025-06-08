@@ -33,7 +33,7 @@ void component_redirect(int x, int y)
             game_start();
             currentScreen = GAME;
         } else if (x > 286 && x < 491 && y > 329 && y < 393) {
-            history();
+            view_info();
             currentScreen = HISTORY;
         } else if (x > 286 && x < 491 && y > 409 && y < 478) {
             exit(0);

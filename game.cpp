@@ -14,10 +14,10 @@ void game_start()
         setvisualpage(1 - page);
         cleardevice();
 
-        draw_circle(ballx, bally);
+        draw_circle(ballx,bally);
 
         sprintf(scoreText, "Score: %d", user.score);
-        outtextxy(550, 100, scoreText);
+        outtextxy(550, 50, scoreText);
 
         bally += ball_velocity_y;
         ballx += ball_direction * ball_speed;
@@ -48,6 +48,8 @@ void game_start()
         page = 1 - page;
         ball_status = false;
     }
+    user.score = scoreText;
+    save_info();
 }
 
 void draw_paddel(int x)
