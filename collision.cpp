@@ -35,4 +35,5 @@ void check_collision(int &ball_x, int &ball_y, int paddle_x)
         ball_y = 10;
         ball_velocity_y = ball_speed;
     }
+        save_info();
 }

@@ -8,7 +8,9 @@ int ball_velocity_y = -5;
 int page = 0;
 bool isGameOver = false;
 bool ball_status = false;
+
 user_info user;
+
 Screen currentScreen = MENU;
 
 

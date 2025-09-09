@@ -12,6 +12,7 @@ void save_info() {
 int view_info() {
 	cleardevice();
 	title();
+	draw_back_button();
     ifstream file("score.dat", ios::binary);
     if (file.is_open()) {
         user_info temp;

@@ -1,12 +1,12 @@
 #include "game.h"
 
 void background_image() {
-    readimagefile("C:\\Users\\user\\Downloads\\female.bmp", 1, 249, 221, 475);
+  
 }
 
 void draw_back_button() {
     setcolor(WHITE);
-    settextstyle(DEFAULT_FONT, HORIZ_DIR, 1);
+    settextstyle(DEFAULT_FONT, HORIZ_DIR, 2);
     rectangle(24, 19, 105, 44);
     outtextxy(30, 25, (char*)"BACK");
 }
@@ -14,7 +14,7 @@ void draw_back_button() {
 void title() {
     settextstyle(SIMPLEX_FONT, HORIZ_DIR, 5);
     bar(((MAX_WIDTH / 2) / 2) - 20, ((MAX_HEIGHT / 2) / 5) + 20,
-        (MAX_WIDTH / 2) + ((MAX_WIDTH / 2) / 2), ((MAX_HEIGHT / 2) / 5) + 20);
+	(MAX_WIDTH / 2) + ((MAX_WIDTH / 2) / 2), ((MAX_HEIGHT / 2) / 5) + 20);
 
     setcolor(RGB(150, 150, 150));
     int text_width = textwidth((char*)"PADDLE AND BALL");
@@ -49,16 +49,13 @@ void user_menu() {
     setcolor(WHITE);
 
     const char* made_by = "This is made by Gaurab Aryal";
-    const char* thank_you = "Please say : Thank You";
 
     int text_width1 = textwidth((char*)made_by);
-    int text_width2 = textwidth((char*)thank_you);
 
     int text_y1 = MAX_HEIGHT - 100;
     int text_y2 = MAX_HEIGHT - 70;
 
     outtextxy((MAX_WIDTH - text_width1) / 2, text_y1, (char*)made_by);
-    outtextxy((MAX_WIDTH - text_width2) / 2, text_y2, (char*)thank_you);
 
     currentScreen = MENU;
 }
@@ -70,8 +67,8 @@ void history() {
     settextstyle(SIMPLEX_FONT, HORIZ_DIR, 3);
     setcolor(YELLOW);
     outtextxy(200, 200, (char*)"Your Score History...");
-
     currentScreen = HISTORY;
+    view_info();
 }
 
 // This function handles button clicks based on current screen

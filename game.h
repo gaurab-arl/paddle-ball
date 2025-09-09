@@ -18,6 +18,7 @@ using namespace std;
 #define paddely (MAX_HEIGHT / 26)
 #define ball_speed 10
 
+
 // Global variable declarations (extern)
 extern int ballx;
 extern int bally;
@@ -26,6 +27,7 @@ extern int ball_velocity_y;
 extern int page;
 extern bool isGameOver;
 extern bool ball_status;
+
 
 struct user_info {
     int score;

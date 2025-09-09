@@ -79,6 +79,11 @@ void game_start() {
 
         draw_paddel(paddleX);
         check_collision(ballx, bally, paddleX);
+        
+        sprintf(scoreText, "Score: %d", user.score);
+settextstyle(DEFAULT_FONT, HORIZ_DIR, 2);
+setcolor(WHITE);
+outtextxy(550, 50, scoreText);
 
         if (user.score >= lastScoreCheckpoint + 100) {
             show_message("LEVEL UP! SPEED INCREASED!", 1200);
