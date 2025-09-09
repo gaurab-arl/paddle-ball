@@ -53,16 +53,16 @@ This project demonstrates fundamental concepts in **2D game development**, inclu
 ## 📂 Project Structure
 
 paddle-ball-main/
-  │── game/
-  │ ├── pic/ # Images (menu, gameplay, game_over)
-  │ ├── game.cpp # Core game loop
-  │ ├── global.cpp # Global variables
-  │ ├── user.cpp # User input & profile handling
-  │ ├── game.h # Header definitions
-  │ ├── Makefile.win # Build script (MinGW/WinBGI)
-  | ├── score.dat # raw binary save file (not human-readable)
-  │ └── collision.cpp # For paddle and ball collision 
-  │── README.md # Project documentation
+# │── game/
+# │ ├── pic/ # Images (menu, gameplay, game_over)
+# │ ├── game.cpp # Core game loop
+# │ ├── global.cpp # Global variables
+# │ ├── user.cpp # User input & profile handling
+# │ ├── game.h # Header definitions
+# │ ├── Makefile.win # Build script (MinGW/WinBGI)
+# | ├── score.dat # raw binary save file (not human-readable)
+# │ └── collision.cpp # For paddle and ball collision 
+# │── README.md # Project documentation
 
 ---
 
