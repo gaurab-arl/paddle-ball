@@ -52,6 +52,7 @@ This project demonstrates fundamental concepts in **2D game development**, inclu
 
 ## 📂 Project Structur
 
+```
 paddle-ball-main/
 │
 ├── game/
@@ -64,6 +65,7 @@ paddle-ball-main/
 │   └── ...
 │
 └── README.md                  # Project documentation
+```
 ---
 
 ## 🖥️ Requirements
