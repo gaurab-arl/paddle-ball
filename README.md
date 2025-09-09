@@ -22,7 +22,7 @@ This project demonstrates fundamental concepts in **2D game development**, inclu
   Gain points every time you hit the ball with your paddle. Your score is displayed live during gameplay.
 
 - 💾 **User Profiles**  
-  Enter your username before starting. The game saves your score in a local file so you can track progress.
+  The game saves your score in a local file so you can track progress.
 
 - 🖼️ **Graphics**  
   Implemented using `<graphics.h>` with custom images for menu, gameplay, and game-over screen.
@@ -36,7 +36,7 @@ This project demonstrates fundamental concepts in **2D game development**, inclu
 
 ### 1. **Menu**
 - On launch, the main menu is displayed.
-- Players can **start a new game**, **view instructions**, or **exit**.
+- Players can **start a new game**, **view history**, or **exit**.
 
 ### 2. **Gameplay**
 - The paddle moves **left (←)** and **right (→)** with keyboard input.
@@ -45,8 +45,8 @@ This project demonstrates fundamental concepts in **2D game development**, inclu
 - Collision detection increases the score by `+10` per paddle hit.
 
 ### 3. **Game Over**
-- Final score is displayed.
-- Player can **return to the main menu** or **exit**.
+- Final score is saved for history.
+- Player can **return to the main menu**.
 
 ---
 
