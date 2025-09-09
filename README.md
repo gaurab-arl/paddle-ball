@@ -63,9 +63,6 @@ paddle-ball-main/
 │ └── ...
 │── README.md # Project documentation
 
-yaml
-Copy code
-
 ---
 
 ## 🖥️ Requirements
@@ -76,46 +73,40 @@ Copy code
 
 ---
 
+## 🎓 Learning Outcomes
+This project demonstrates:
+Game loop design in C++
+Handling keyboard input
+Collision detection
+File I/O for saving progress
+Basic use of graphics.h for drawing shapes and text
+Structuring a small game project with multiple .cpp and .h files
+
+---
+
+## 📌 Future Improvements
+Add sound effects (hit, score, game over).
+Multiple difficulty levels (ball speed increase).
+High score leaderboard.
+Power-ups (multi-ball, paddle size changes).
+
+---
+
 ## ▶️ Running the Game
 
 ### 1. Compile
 If using **MinGW**:
-```bash
+
+```
 g++ game.cpp global.cpp user.cpp -o paddle-ball -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
 Or build with the provided Makefile:
-
-bash
-Copy code
 mingw32-make -f Makefile.win
+
 2. Run
-bash
-Copy code
 ./paddle-ball.exe
-🎓 Learning Outcomes
-This project demonstrates:
 
-Game loop design in C++
-
-Handling keyboard input
-
-Collision detection
-
-File I/O for saving progress
-
-Basic use of graphics.h for drawing shapes and text
-
-Structuring a small game project with multiple .cpp and .h files
-
-📌 Future Improvements
-Add sound effects (hit, score, game over).
-
-Multiple difficulty levels (ball speed increase).
-
-High score leaderboard.
-
-Power-ups (multi-ball, paddle size changes).
+```
+---
 
 ✨ Credits
 Developed by Gaurab Aryal as a learning project in C++ game development.
-Special thanks to WinBGI for graphics support.
-
